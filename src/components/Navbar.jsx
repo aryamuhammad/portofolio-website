@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isDark, setIsDark] = useState(true);
-  const [isNavbarOpen, setIsNavbarOpen] = useState(true);
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   let Navigation = [
     { name: "HOME", link: "/" },
     { name: "BLOG", link: "/blog" },
@@ -18,10 +18,10 @@ function Navbar() {
   return (
     <nav className="">
       {/* Container Nav */}
-      <div className="flex justify-between items-center px-12 md:w-4/5 lg:w-3/5 md:mx-auto md:justify-between md:static md:px-0 relative">
+      <div className="flex justify-between items-center px-12 md:justify-between md:static md:px-0 relative">
         {/* Avatar */}
         <div className=" md:w-3/4">
-          <div className="bg-sec-color-dark rounded-full w-10">
+          <div className="bg-sec-color-dark rounded-full w-10 hover:-translate-y-1 transition-all duration-300">
             <img
               src={avatar}
               alt="avatar"
@@ -33,7 +33,7 @@ function Navbar() {
         {/* Navigation Links */}
         <ul
           className={`absolute bg-back-dark  left-0 w-full align-center flex flex-col  items-center h-screen z-1 ${
-            isNavbarOpen ? "-top-10" : "-top-[800px]"
+            isNavbarOpen ? "-top-10" : "-top-[1000px]"
           }  justify-evenly gap-y-11 transition-all duration-500 md:static md:flex-row md:h-auto`}
         >
           {Navigation.map((nav, index) => {
