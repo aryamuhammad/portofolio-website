@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <nav className="">
       {/* Container Nav */}
-      <div className="flex justify-between items-center px-12 md:justify-between md:static md:px-0 relative">
+      <div className="flex justify-between items-center px-6 md:justify-between md:static md:px-0 relative">
         {/* Avatar */}
         <div className=" md:w-3/4">
           <div className="bg-sec-color-dark rounded-full w-10 hover:-translate-y-1 transition-all duration-300">
@@ -34,11 +34,11 @@ function Navbar() {
         <ul
           className={`absolute bg-back-dark  left-0 w-full align-center flex flex-col  items-center h-screen z-1 ${
             isNavbarOpen ? "-top-10" : "-top-[1000px]"
-          }  justify-evenly gap-y-11 transition-all duration-500 md:static md:flex-row md:h-auto`}
+          }  justify-evenly gap-y-11 transition-all duration-500 md:static md:flex-row md:h-auto md:w-3/5`}
         >
           {Navigation.map((nav, index) => {
             return (
-              <li className="text-sm">
+              <li key={index} className="text-sm">
                 <NavLink
                   key={index}
                   className={({ isActive }) =>
