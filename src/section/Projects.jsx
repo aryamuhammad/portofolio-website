@@ -1,6 +1,6 @@
 import React from "react";
-import bmi from "../assets/bmicalc.jpeg";
-import movieapp from "../assets/movieapp.jpeg";
+import bmi from "../assets/bmi.png";
+import movieapp from "../assets/movieapp.png";
 import ayorelieve from "../assets/ayorelieve.png";
 import expensestracker from "../assets/expenses.png";
 import todo from "../assets/todo.png";
@@ -31,22 +31,23 @@ function Projects() {
       tech: ["Reactjs", "Bootstrap 5", "Redux"],
       repo: "https://github.com/aryamuhammad/tpa-5-todoapp",
     },
-    {
-      name: "BMI Calculator",
-      img: bmi,
-      desc: "Website untuk menghitung Body Mass Index",
-      link: "https://calc-your-bmi.netlify.app/",
-      tech: ["HTML", "CSS", "Javascript"],
-      repo: "https://github.com/aryamuhammad/TPA-BMI-Calculator",
-    },
-    {
+        {
       name: "TMDb Movie Web",
       img: movieapp,
-      desc: "Website untuk menghitung Body Mass Index",
+      desc: "Website that displays a list of movies that are currently popular",
       link: "https://nonton-lah.netlify.app/",
       tech: ["Javascript", "Bootstrap 5"],
       repo: "https://github.com/aryamuhammad/TPA-BMI-Calculator",
     },
+    {
+      name: "BMI Calculator",
+      img: bmi,
+      desc: "Websites that help you in calculating your Body Mass Index",
+      link: "https://calc-your-bmi.netlify.app/",
+      tech: ["Javascript"],
+      repo: "https://github.com/aryamuhammad/TPA-BMI-Calculator",
+    },
+
   ];
 
   return (
