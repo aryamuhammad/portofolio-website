@@ -21,10 +21,10 @@ function About() {
     { logo: github, link: "https://github.com/aryamuhammad" },
   ];
   return (
-    <div className="px-6 md:px-0 md:flex md:flex-row md:py-5 md:gap-x-10 md:my-28">
+    <div className="px-6 md:px-0 md:flex md:flex-row md:py-5 md:gap-x-10 md:my-28 bg-[#0c111c] md:bg-back-dark py-5">
       <div className="my-6">
-        <div className="flex justify-center md:justify-start items-center mb-4 gap-x-3">
-          <div className="h-full px-2 py-2 rounded-full bg-[#0c111c]">
+        <div className="flex justify-center md:justify-start items-center mb-4 gap-x-3 ">
+          <div className="h-full px-2 py-2 rounded-full bg-[#0c111c] hidden md:block">
             <BiSmile className="text-sec-color-dark text-2xl" />
           </div>
           <div>
@@ -56,7 +56,7 @@ function About() {
       </div>
       <div className="my-6 md:w-full">
         <div className="flex justify-center md:justify-start items-center mb-4 gap-x-3"> 
-          <div className="h-full px-2 py-2 rounded-full bg-[#0c111c]">
+          <div className="h-full px-2 py-2 rounded-full bg-[#0c111c] hidden md:block">
             <BsGear className="text-sec-color-dark text-xl"/>
           </div>
           <div>
@@ -71,7 +71,7 @@ function About() {
             return (
               <div
                 key={index}
-                className="text-slate-400 bg-[#0c111c]  px-4 py-2 rounded-sm w-auto"
+                className="text-slate-400 bg-back-dark md:bg-[#0c111c]  px-4 py-2 rounded-sm w-auto"
               >
                 <h1>{skill.name}</h1>
               </div>
