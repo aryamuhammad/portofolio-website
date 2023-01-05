@@ -9,16 +9,15 @@ function Navbar() {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   let Navigation = [
     { name: "HOME", link: "/" },
-    { name: "BLOG", link: "/blog" },
-    { name: "PROJECTS", link: "/project" },
     { name: "ABOUT", link: "/about" },
+    { name: "PROJECTS", link: "/project" },
   ];
   let activeClass = "text-sec-color-dark font-bold";
   let notActiveClass = "text-primary-color-dark font bold";
   return (
-    <nav className="">
+    <nav className="mb-5">
       {/* Container Nav */}
-      <div className="flex justify-between items-center px-6 md:justify-between md:static md:px-0 relative">
+      <div className="flex justify-between items-center px-6 md:justify-between md:static md:px-0 relative md:w-4/5 lg:w-3/4 mx-auto">
         {/* Avatar */}
         <div className=" md:w-3/4">
           <div className="bg-sec-color-dark rounded-full w-10 hover:-translate-y-1 transition-all duration-300">
@@ -39,7 +38,7 @@ function Navbar() {
           {Navigation.map((nav, index) => {
             return (
               <li key={index} className="text-sm">
-                <NavLink
+                <NavLink to={nav.link}
                   key={index}
                   className={({ isActive }) =>
                     isActive ? activeClass : notActiveClass
@@ -76,7 +75,6 @@ function Navbar() {
       </div>
       {/* End Container Nav */}
     </nav>
-
   );
 }
 

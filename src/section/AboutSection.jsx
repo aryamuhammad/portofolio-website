@@ -4,7 +4,7 @@ import linkedin from "../assets/linkedin.png";
 import github from "../assets/github.png";
 import { BiSmile } from "react-icons/bi";
 import { BsGear } from "react-icons/bs";
-function About() {
+function AboutSection() {
   let skills = [
     { name: "HTML" },
     { name: "CSS" },
@@ -21,7 +21,7 @@ function About() {
     { logo: github, link: "https://github.com/aryamuhammad" },
   ];
   return (
-    <div className="px-6 md:px-0 md:flex md:flex-row md:py-5 md:gap-x-10 md:my-28 bg-[#0c111c] md:bg-back-dark py-5">
+    <div className="px-6 md:px-0 md:flex md:flex-row md:py-5 md:gap-x-10 md:my-28 bg-[#0c111c] md:bg-back-dark py-5 md:w-4/5 lg:w-3/4 mx-auto">
       <div className="my-6">
         <div className="flex justify-center md:justify-start items-center mb-4 gap-x-3 ">
           <div className="h-full px-2 py-2 rounded-full bg-[#0c111c] hidden md:block">
@@ -41,7 +41,7 @@ function About() {
         </p>
         <div id="socmed">
           <h1 className="text-xl font-bold text-sec-color-dark my-4 text-center md:text-start">
-            Let's Connect!
+            Get in touch 👋
           </h1>
         </div>
         <div className="flex gap-x-5 text-center justify-center md:justify-start">
@@ -83,4 +83,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSection;

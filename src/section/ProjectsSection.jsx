@@ -5,7 +5,7 @@ import ayorelieve from "../assets/ayorelieve.png";
 import expensestracker from "../assets/expenses.png";
 import todo from "../assets/todo.png";
 
-function Projects() {
+function ProjectsSection() {
   let projects = [
         {
       name: "AYO Relieve",
@@ -51,7 +51,7 @@ function Projects() {
   ];
 
   return (
-    <div className="px-6 md:px-0 md:my-28 md:py-5 py-5">
+    <div className="px-6 md:px-0 md:my-28 md:py-5 py-5 md:w-4/5 lg:w-3/4 mx-auto">
       <div>
         <h1 className="text-xl font-bold text-sec-color-dark  text-center md:text-start my-4">
           Projects
@@ -121,4 +121,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default ProjectsSection;
