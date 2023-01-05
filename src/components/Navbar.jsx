@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import avatar from "../assets/avatar.svg";
 import { BsMoon, BsSun } from "react-icons/bs";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
@@ -6,6 +6,11 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   const [isDark, setIsDark] = useState(true);
+  console.log(isDark)
+  const handleToggleTheme =()=> {
+    setIsDark(!isDark)
+    localStorage.setItem("isDark", JSON.stringify(isDark))
+  }
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   let Navigation = [
     { name: "HOME", link: "/" },
@@ -15,7 +20,7 @@ function Navbar() {
   let activeClass = "text-sec-color-dark font-bold";
   let notActiveClass = "text-primary-color-dark font bold";
   return (
-    <nav className="mb-5">
+    <nav className="py-10 md:mx-auto bg-back-dark">
       {/* Container Nav */}
       <div className="flex justify-between items-center px-6 md:justify-between md:static md:px-0 relative md:w-4/5 lg:w-3/4 mx-auto">
         {/* Avatar */}
@@ -50,7 +55,7 @@ function Navbar() {
             );
           })}
           <i
-            onClick={() => setIsDark(!isDark)}
+            onClick={handleToggleTheme}
             className="text-primary-color-dark hover:text-sec-color-dark hover:-translate-y-1 transition-all duration-300 cursor-pointer text-lg"
           >
             {isDark === true ? <BsMoon /> : <BsSun />}

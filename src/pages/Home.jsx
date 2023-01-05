@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import AboutSection from '../section/AboutSection'
@@ -7,8 +7,7 @@ import ProjectsSection from '../section/ProjectsSection'
 
 function Home() {
   return (
-    <div className='bg-back-dark py-10 md:mx-auto'>
-        <Navbar/>
+    <div className={`md:-mt-32 py-10 md:mx-auto bg-back-dark -mt-2`}>
         <JumbotronSection/>
         <AboutSection/>
         <ProjectsSection/>

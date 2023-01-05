@@ -2,8 +2,10 @@ import React from 'react'
 import avatar from "../assets/avatar.svg"
 import Button from '../components/Button'
 function JumbotronSection() {
+  let isDark = JSON.parse(localStorage.getItem("isDark"))
+
   return (
-    <div className='my-16 px-6 md:px-0 md:my-56 md:w-4/5 lg:w-3/4 mx-auto'>
+    <div className='py-5 px-6 md:px-0 md:mt-56 md:w-4/5 lg:w-3/4 mx-auto'>
         <div className='flex flex-col gap-y-10 md:gap-x-11 md:flex-row md:items-center md:justify-between'>
             <div className="bg-sec-color-dark rounded-full w-4/5 mx-auto md:w-1/4 md:order-last md:mx-auto">
                 <img src={avatar} alt="" className='rounded-full' />

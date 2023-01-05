@@ -21,7 +21,7 @@ function AboutSection() {
     { logo: github, link: "https://github.com/aryamuhammad" },
   ];
   return (
-    <div className="px-6 md:px-0 md:flex md:flex-row md:py-5 md:gap-x-10 md:my-28 bg-[#0c111c] md:bg-back-dark py-5 md:w-4/5 lg:w-3/4 mx-auto">
+    <div className="px-6 py-5 md:px-0 md:flex md:flex-row md:py-5 md:gap-x-10 md:my-28 bg-[#0c111c] md:bg-back-dark md:w-4/5 lg:w-3/4 mx-auto">
       <div className="my-6">
         <div className="flex justify-center md:justify-start items-center mb-4 gap-x-3 ">
           <div className="h-full px-2 py-2 rounded-full bg-[#0c111c] hidden md:block">

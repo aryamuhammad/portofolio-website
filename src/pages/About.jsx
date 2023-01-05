@@ -5,8 +5,7 @@ import AboutSection from "../section/AboutSection";
 
 function About() {
   return (
-    <div className="py-10 md:mx-auto md:h-screen">
-    <Navbar/>
+    <div className="py-10 md:mx-auto md:h-screen bg-back-dark -mt-10">
       <AboutSection className=""/>
       <Footer/>
     </div>
