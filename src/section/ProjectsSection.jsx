@@ -103,7 +103,7 @@ function ProjectsSection() {
                   <a href={project.link} target="_blank" className="w-full">
                     <button
                       type="button"
-                      className={`text-white border-2 ${isDark? "border-sec-color-dark bg-gradient-to-r  from-cyan-400  to-sec-color-dark " : "border-cyan-400 bg-gradient-to-r from-cyan-400  to-sec-color-white "} hover:bg-gradient-to-br focus:ring-4 focus:outline-none font-medium rounded-md text-sm px-5 py-2.5 text-center transition-all duration-300 w-full`}
+                      className={`text-white border-2 ${isDark? "border-sec-color-dark bg-gradient-to-r  from-cyan-400  to-sec-color-dark " : "border-[#eef2f7] bg-gradient-to-r from-cyan-400  to-sec-color-white "} hover:bg-gradient-to-br focus:ring-4 focus:outline-none font-medium rounded-md text-sm px-5 py-2.5 text-center transition-all duration-300 w-full`}
                     >
                       View Live
                     </button>
