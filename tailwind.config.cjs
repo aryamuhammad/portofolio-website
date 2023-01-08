@@ -11,7 +11,7 @@ module.exports = {
         "sec-color-dark": "#0fd3d7",
         "primary-color-white": "#2d3748",
         "sec-color-white": "#2b6bb1",
-        "body-text": "3C4048",
+        "body-text": "#3C4048",
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],

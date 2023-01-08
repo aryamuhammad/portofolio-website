@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
+import { ThemeContext } from '../context/ThemeProvider'
 import AboutSection from '../section/AboutSection'
 import JumbotronSection from '../section/JumbotronSection'
 import ProjectsSection from '../section/ProjectsSection'
 
 function Home() {
+  const {isDark} = useContext(ThemeContext)
+  console.log(isDark)
   return (
-    <div className={`md:-mt-32 py-10 md:mx-auto bg-back-dark -mt-2`}>
+    <div className={`${isDark ? "bg-back-dark" : "bg-back-white"}`}>
         <JumbotronSection/>
         <AboutSection/>
         <ProjectsSection/>

@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
+import { ThemeContext } from "../context/ThemeProvider";
 import ProjectsSection from "../section/ProjectsSection";
 function Projects() {
+  const {isDark} = useContext(ThemeContext)
   return (
-    <div className="md:-mt-32 md:pb-20 -mt-2 pb-10 md:mx-auto bg-back-dark h-full">
+    <div className={`${isDark ? "bg-back-dark" : "bg-back-white"} md:mx-auto md:pb-20  pb-10 `}>
       <ProjectsSection />
       <Footer />
     </div>
