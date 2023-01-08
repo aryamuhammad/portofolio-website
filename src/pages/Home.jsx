@@ -8,7 +8,6 @@ import ProjectsSection from '../section/ProjectsSection'
 
 function Home() {
   const {isDark} = useContext(ThemeContext)
-  console.log(isDark)
   return (
     <div className={`${isDark ? "bg-back-dark" : "bg-back-white"}`}>
         <JumbotronSection/>

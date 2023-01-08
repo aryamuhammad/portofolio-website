@@ -19,7 +19,7 @@ function AboutSection() {
   ];
   let socmed = [
     { logo: ig, link: "https://www.instagram.com/aryawirawannn/" },
-    { logo: linkedin, link: "www.linkedin.com/in/muhammadaryawirawan" },
+    { logo: linkedin, link: "https://www.linkedin.com/in/muhammadaryawirawan/" },
     { logo: github, link: "https://github.com/aryamuhammad" },
   ];
   return (
@@ -53,9 +53,7 @@ function AboutSection() {
         </div>
 
         <p className={`${isDark? "text-slate-400" : "text-primary-color-white"}`}>
-          I am Muhammad Arya Wirawan. Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Aspernatur libero fuga neque? Omnis officia
-          laboriosam ut accusantium recusandae consectetur reiciendis.
+          I am Muhammad Arya Wirawan. I am a third year collage student at Universitas Singaperbangsa Karawang in major Management. I have big interest in Web Development field. I am a curious person who loves to learn and explore something new. I am also have good communication skill.
         </p>
         <div id="socmed">
           <h1

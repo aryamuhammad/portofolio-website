@@ -20,7 +20,7 @@ function ProjectsSection() {
         {
       name: "Simple Expenses Tracker ",
       img: expensestracker,
-      desc: "A website that helps you to track your expenses(Mobile View Only)",
+      desc: "A website that helps you to track your expenses (Mobile View Only)",
       link: "https://simpleexpensestracker.netlify.app/",
       tech: ["Reactjs", "Tailwindcss", "Redux"],
       repo: "https://github.com/aryamuhammad/SimpleExpensesTrackerApp",
@@ -59,7 +59,7 @@ function ProjectsSection() {
           Projects
         </h1>
         <p className={`${isDark? "text-slate-400": "text-primary-color-white"}`}>
-          I have created many projects while studying to be a Web Developer,
+          I have created many projects while studying to be a Front End Web Developer,
           here are some of the projects I have created
         </p>
       </div>
